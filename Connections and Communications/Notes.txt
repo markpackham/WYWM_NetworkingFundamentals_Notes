@@ -1,0 +1,105 @@
+Unshielded Twisted Pair Cabling (UTP) is paired cabling twisted together with no internal shielding. The outer insulation jacket protects the cable from stress and damage. However, it does not shield the cable from Electromagnetic Interference (EMI). UTP is the most common network cabling for local area networks (LANs) because of its low cost and flexibility.
+
+The reason for twisting each pair is to overcome EMI. By twisting the pairs together like this, each wire in the pair is shielding each other from interference.
+
+ However, when high data transmission rates are required or in an environment that produces high EMI (factory floor with motors) twisting is cables is not enough. Therefore, we use Shielded Twisted Pair (STP) cabling where each pair is wrapped in foil, or all eight wires are encased by a metal braiding. UTP is the preferred choice as the costs are significantly less.
+
+
+Cable Category	Data Rate	Maximum Cable Length	Cable Type	Application
+
+Cat 3
+Up to 10Mbps
+100m
+Twisted Pair
+Token Ring & 10 BASE-T Ethernet
+
+Cat 5	Up to 100Mbps	100m	Twisted Pair
+Ethernet, FastEthernet, Token Rink
+
+Cat 5e	Up to 1Gbps
+100m	Twisted Pair
+Ethernet, FastEthernet, Gigabit Ethernet 
+
+Cat 6	Up to 10Gbps	55m	Twisted Pair
+Gigabit Ethernet, 10G Ethernet (55m)
+
+Cat 6a	Up to 10Gbps	55m	Twisted Pair
+Gigabit Ethernet, 10G Ethernet (55m)
+
+Cat 7	Up to 10Gbps	100m	Twisted Pair
+Gigabit Ethernet, 10G Ethernet (100m)
+
+ *Cat 1 & 2 are not used today as they cannot transmit data
+
+*Cat 3 & 4 are considered obsolete. They might be encountered in older systems
+
+*Cat 5 is the most common and widely used cable at present
+
+*Cat 6 – it is important that all cabling components (jacks, patch panels, patch cords etc.) must be Cat 6 certified
+
+*Cat 7 – cable pairs are individually shielded with an additional cable shield. All cabling components must be Cat 7 certified. Failing this will result in system degradation
+
+
+
+Straight Through UTP
+
+Cabling is the foundation for a solid network, and implementing it correctly the first time will help avoid hours of frustration and troubleshooting. On the other hand, if you are dealing with a poorly cabled network, this knowledge will help you to find the problem and fix it more efficiently.
+
+Wiring up UTP
+
+These are the two wiring schemes that are used today,
+
+T568A
+T568B
+The only difference between these two schemes is that pairs 2 and 3 are reversed. Both work well equally as long as they are not mixed. If A and B are mixed in a system you will get crossed pairs.
+
+UTP cables are terminated with standard connectors and jacks. These connectors and jacks are commonly referred to as RJ-45.
+
+*connector/plug - fitted to the cable
+
+*jack – wall socket, cable is plugged into
+
+Straight through cables are commonly used for connecting PCs to switches or hubs.  These devices automatically cross over the cable internally.
+
+
+The Cross Over Cable
+
+The crossover cable is widely used just like the straight-through cable. The difference is that the crossover cable allows you to directly connect two PCs together without the need for a switch or hub. 
+
+So why do we need a crossover cable to connect two computers together? When data is being sent between two devices that are connected, one is transmitting, and the other receiving. So, in creating a crossover cable we connect the transmit of one computer to the receive of the other and vice versa.
+
+
+What is Fiber Optic Cable?
+
+Unlike UTP, which uses electrical signals to transmit data, Fiber Optic cables use light. Therefore, fiber optic cable has significantly higher data speeds and excellent immunity to electromagnetic interference. 
+
+A light source, LED or laser, transmits data via light pulses into the core. Pulses of light transmitted along the wires are received and interpreted as either 0s or 1s. 
+
+Fiber Optic cable construction consists of the following.
+
+core, usually transparent glass or plastic tube
+cladding, also glass or plastic but of a different density
+insulated casing/inner coatings
+strength member
+outer jacket, designed to protect the cable as a whole 
+While capable of faster speeds and greater distances than UTP, Fiber is more expensive. Although fiber as a material is cheaper than copper, the connectors and tooling required to produce the fiber are more expensive.
+
+How do Fiber Optic Cables Work?
+For fiber optic cable to be able to send data, the construction of fiber optic cable requires multiple components, and these all need to be working correctly. The core and cladding are vital components, but several other parts are crucial for successful data transmission.
+ First is the light source, either an LED or a laser. The LED or laser will receive the data signal to be sent and then convert it into a light pulse signal before bouncing through the fiber core.
+ Next, the core needs to be surrounded by a cladding layer constructed of plastic or glass. The cladding has a different refractive index to the core and allows the incoming light pulses to be bent at particular angles to travel the length of the cable.
+
+ Fibre Optic cables offer
+ * Greater Bandwidth
+ * Higher Transmission Speeds
+ * Safer & More Reliable
+ * Long Distance Coverage
+ * Less Interference
+
+
+ Single-Mode Fiber vs Multimode Fiber Optic Cables
+
+Single Mode – uses a single strand of glass fiber with a narrow diameter. The core is that small; light has only one way/mode to travel through this type of optic cable, straight through the middle. Since the light travels straight through the center, there is less internal reflection. Because of this, there is less attenuation, meaning higher data speeds over longer distances. Single-mode cable is used for extremely long-distance signal transmission.  Typically single-mode uses a laser light source, which is more expensive to produce, requires higher levels of safety awareness, and can transmit data further than multimode. Single-mode can carry data up to 3000 meters according to the existing standard. Single-mode is often used to connect buildings in larger campus environments but also to connect us globally through enormous lengths of single-mode cable on the ocean floor.
+
+
+Multi-Mode: These cables are built with a much larger core. This allows multiple modes of light the travel and not just a single mode. Multimode has increased amounts of internal reflection and thus higher attenuation. This increases bandwidth for shorter distances. Multi-mode cables send mega amounts of data over a short distance. Multimode fiber uses LEDs as a light-generating device. LEDs are cheaper and are effective for shorter distances over the lasers used in single-mode. Multimode can carry data over distances of up to 2000 meters. Multimode fiber is used primarily in LAN applications, including backbone cabling.
