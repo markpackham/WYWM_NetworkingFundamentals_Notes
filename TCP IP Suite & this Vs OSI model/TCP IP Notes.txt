@@ -1,0 +1,64 @@
+Origin of TCP/IP
+
+In the early days of computer networking, a standardised protocol did not exist.
+
+Vendors defined their own proprietary networking models. As a result, if a company bought computers from three different vendors, they would have to set up three different networks based on the vendor's proprietary networking model. The network engineer would then have to connect these networks somehow, making the resulting combined network incredibly complex.
+
+An open, vendor-neutral, public networking model was developed as a result of a U.S. Department of Defence (DoD) contract. The protocols surrounding the original DoD model were further developed by volunteer researchers from various universities. This collaborative effort resulted in the TCP/IP networking model used today.
+
+
+Network Access layer
+The Network Access layer is a combination of the Physical layer and Data Link layer defined in the OSI reference model.
+
+It defines how the data should be sent physically through the network.
+
+This layer is mainly responsible for the transmission of the data between two devices on the same network.
+
+The functions carried out by this layer are encapsulating the IP datagram into frames transmitted by the network and mapping IP addresses into physical addresses.
+
+
+Internet Layer
+The Internet Layer aligns with the Network layer defined in the OSI reference model.
+
+Provisions the logical addressing and routing of data packets using internet protocol like IPv4.
+
+It transmits data packets to the link layer.
+
+It reassembles the out-of-order packets when they reach the destination.
+
+It handles errors in the transmission of data packets and fragmentation of data packets.
+
+
+Transport Layer
+The Transport Layer is responsible for the reliability, flow control, and correction of data that is being sent over the network.
+
+The two protocols used in the transport layer are the User Datagram Protocol (UDP) and Transmission control protocol (TCP).
+
+
+
+Application Layer
+It combines the functionalities of the Session Layer, the Presentation Layer and the Application Layer of the OSI model.
+
+The Application Layer provides the interfaces and protocols that allow the user to interact with the application.
+
+When one Application Layer protocol wants to communicate with another application layer, it forwards its data to the Transport Layer.
+
+It is also concerned with error handling and recovery of the message as a whole.
+
+
+The TCP/IP model creates a set of standardised vendor neutral rules that allows us all to take a computer (or mobile device) out of the box, plug in all the right cables, turn it on, and connect to and use a network.
+
+
+Similarities between the OSI model and TCP/IP suite
+
+- Both references are layered and logical models
+- Both define standards for networking
+- Both provide a framework for creating and implementing networking standards and devices
+- Both divide the network communication process into layers
+- Both models simplify the troubleshooting process by dividing complex functions into simpler components
+
+Differences between the OSI model and TCP/IP suite
+
+- Different functionalities of upper layers: OSI = application, presentation, session layers | TCP/IP = application layer
+- Different functionalities of lower layers: OSI = data link, physical layers | TCP/IP = network access layer
+- Different routing protocols and standards layer: OSI = network layer | TCP/IP = internet layer

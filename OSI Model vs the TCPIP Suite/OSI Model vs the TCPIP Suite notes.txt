@@ -1,5 +1,0 @@
-The Open Systems Interconnection (OSI) model is a mental framework that describes how data travels between all the network components. It is not a piece of hardware or software, signal, or data packet.
-
-Instead, it is a seven-layer depiction of how data travels through a network so that you can comprehend how data moves. This helps explain to other people quickly and concisely what the problem is or what part of the network you are working on.
-
-While the OSI model is a functional tool in network troubleshooting, Network engineers focus on layers 1 - 4 while software engineers focus on layers 5 - 7.

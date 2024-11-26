@@ -1,0 +1,91 @@
+The Open Systems Interconnection (OSI) model is a mental framework that describes how data travels between all the network components. It is not a piece of hardware or software, signal, or data packet.
+
+Instead, it is a seven-layer depiction of how data travels through a network so that you can comprehend how data moves. This helps explain to other people quickly and concisely what the problem is or what part of the network you are working on.
+
+While the OSI model is a functional tool in network troubleshooting, Network engineers focus on layers 1 - 4 while software engineers focus on layers 5 - 7.
+"Please Do Not Throw Salami Pizza Away"
+
+Layer 7 – Application Layer
+Layer 7, or the Application layer, is the top layer of the OSI model. This layer is what users will typically interact with. Layer 7 manages the communications between the application, such as a web browser or Office 365, and the network. It presents the information sent over the network in a readable format.
+
+
+Layer 6 – Presentation Layer
+Layer 6, or the Presentation Layer, is all about representing data. So, for example, if layer 7 is responsible for presenting information in a readable format, layer 6 is responsible for converting that readable information into 1’s and 0’s that the computer understands. Or, when the presentation layer receives the 1’s and 0’s data from the network, it is converted back to a readable format for the application layer. 
+When the presentation layer converts data to 1’s and 0’s, the data is compressed and encrypted for transmission over the network.
+
+
+Layer 5 – Session
+Layer 5 is the Session layer. The Session layer is concerned with; 
+
+Establishing
+Monitoring, and 
+Tearing down communication sessions between hosts. 
+Communication sessions consist of requests and responses that occur between applications.  
+
+The session layer does not transmit data. Instead, it is the phase of data transmission where the network assesses where the data goes. A transmission path has been identified and then locks that transmission path in place by confirming with the receiving node that the data is incoming.  
+
+Once the sending host and the receiving host agree to the sent data, the session has been established. 
+Data has no particular name for layers 5, 6, and 7. However, in layers 2, 3, and 4, the data for each layer has been assigned a unique name. 
+
+
+Layer 4 – Transport
+
+The transport layer refers to data as 'Segments'. The transport layer is responsible for the delivery of Segments between end-users. Layer 4 also acknowledges successful segment transmission and re-transmits if errors are found.  
+
+So what does this mean? From the sender, the transport layer receives the formatted data from the upper layers (5,6 &7). The data is then segmented, and flow & error control protocols are applied to ensure proper data transmission. Also, at this time, source and destination port numbers are added to the segment's header. Many applications have default port numbers already assigned. 
+
+The transport layer reads the port number from the segment's header on the receiver's end, performs sequencing and re-assembly of the segmented data, and finally forwards the data to the respective application. 
+
+
+Layer 3 - Network
+
+The network layer is responsible for delivering packets (data) from one host to another on different networks. The Network layer will also take care of packet routing by selecting the shortest possible route from the number of routes available. Sender and receiver IP addresses are placed in the header of this packet. 
+
+The Network layer has two distinct functions: Routing and Logical Addressing. 
+
+The layer protocols determine the best possible route from sender to receiver. 
+Sender & Receiver IP addresses are placed into the header. The IP address identifies each device individually and universally.  
+
+
+Layer 2 - Data Link
+
+The Data Link layer oversees the message delivery between devices. The primary function of the Data Link layer is to ensure data is error-free from one device to another across the physical layer. Once a packet (data) arrives in a Network, the DLL transmits it to the host using its MAC address. 
+
+The Data Link layer divides into two sublayers 
+
+Logical Link Control (LLC) 
+Media Access Control (MAC) 
+When a packet is received from the Network layer, it is then divided into frames. The DLL places the MAC address of the sender and receiver into the header of this frame. 
+
+Address Resolution Protocol (ARP) is used to obtain the receiver's MAC address. This is done by request, "Who's IP address is this?" and the destination host will reply with the MAC address.
+
+
+Layer 1 - Physical Layer
+
+The Physical Layer is concerned with the physical infrastructure or the actual physical connection between devices. The data within the Physical layer is known as Bits. These Bits are transmitted from one node to the next. When the Physical layer receives data, the incoming signal is converted into 0’s and 1’s and then forwarded to the DLL so that the frame can be pieced together.  
+
+
+
+DEMO Transporting an Email across OSI model
+
+Layer 7 – Application Layer
+You open Gmail, type an email and click send. You have just created a new data packet to send through the network. This is your core piece of data.
+
+Layer 6 – Presentation Layer
+You press send on the email, the piece of data is sent to layer 6 at which point it is translated into 1’s and 0’s that computers can read.
+
+Layer 5 – Session
+Once converted and encrypted, it is sent to layer 5, where a session is established for communication between the sender's device and the outgoing server.
+
+Layer 4 – Transport
+Once the session is locked in, Layer 4 receives data, source and destination port numbers get added to the data and the transport protocols, and now the data starts to have more information.
+
+Layer 3 - Network
+Then the data is sent to layer 3 where IP addresses are attached, so the data packet grows even more. 
+
+Layer 2 - Data Link
+Then it is sent to the data link layer in layer 2, where mac addresses are added. 
+
+Layer 1 - Physical Layer
+Finally, it is sent to layer 1, the physical layer, where it is sent across the network.
+Once it arrives at the intended destination, the piece of data goes through the server's process as the added data is stripped of the added data bits, then decrypted and translated back into the readable text from 1’s and 0’s.
