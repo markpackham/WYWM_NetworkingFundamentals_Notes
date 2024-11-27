@@ -1,0 +1,110 @@
+Wireless Ad Hoc Network is the simplest of the two. It is the simplest because it does not require network infrastructure devices, like wireless access points (WAP). Instead, two or more devices with wireless capability, WIFI or Bluetooth, can communicate directly to each other, and file sharing becomes super convenient. A great example is the Airdrop feature used by Apple for sharing photos, videos, and files between Apple devices. This type of file sharing does not require any infrastructure and is done by connecting devices via WIFI or Bluetooth. 
+
+The downside to the Ad Hoc network is that it is not scalable, meaning that as a WLAN it is not suitable for business or even the home.
+
+
+Wireless Infrastructure Network is the most used WLAN. Devices such as Laptops, Smartphones, and Tablets connect to a Network and each other via Wireless Access Points (WAP). WAPs are hard-wired connections to a Network making Infrastructure Networks highly scalable. And with the strategic placement of WAPs, we can extend our wireless network ranges. Infrastructure WLANs also provide the ability to monitor the number of users, bandwidth used, and security management. 
+
+When wireless coverage is needed in an area and is not in proximity to an ethernet switch, and since WAPs are hardwired, a Mesh network is used. As long as the Mesh Access Point (MAP) has power available, it can receive a signal from a WAP and retransmit that signal. This further increases the flexibility for access point placement.
+
+
+Comparing infrastructure wireless networks to the alternative, ad-hoc wireless networks, infrastructure mode networks offer the advantage of scalability, centralized security management, and improved reach.
+The disadvantage of infrastructure wireless networks is simply the additional cost to purchase Access Point (AP) hardware.
+
+
+Radio Frequency 
+
+WLANs use two different frequency bands, 2.4GHz (Gigahertz) and 5GHz. The IEEE 802.11 standard defines the operation for these networks. Depending on your geographical location the amount of channels that you can access on these frequencies differs with different rules and regulations. So, it is therefore imperative that you check your local regulations before setting up or changing any WLAN. For example when using the 2.4Ghz frequency range;
+
+North America can only use up to channel 11, each being 20Mhz wide
+Australia can use up to channel 13 with each channel being 22MHz wide
+Channel 14 can only be use in Japan
+2.4GHz Channels
+
+The 2.4GHz band divides into 14 channels with 5MHz (Megahertz) bandwidth between channels. When designing a WLAN using the 2.4Ghz frequency, preventing interference between each other is a priority. To do this, WAPs need to be assigned a channel number. Even though there are up to 13 channels available in 2.4 GHz, only 3 of them do not “overlap” or interfere with one other. These are channels 1, 6, and 11.  Another consideration is the local regulatory requirements. Some geographical locations can only use up to channel 11, others up to channel 13, and channel 14 is only allowed in Japan, and channel width can either be 20MHz or 22Mhz.  Channels can be bonded together to make a wider channel, e.g. 40MHz. With the limited number of non-overlapping channels, we never bond 2.4GHz channels together as this degrades the system, not improve it. Channel overlap will be explained later in the lesson.
+
+
+2.4GHz Channel Interference
+
+When a WAP wants to transmit, its channel must be clear. Only one device can successfully transmit at a time. When overlapping channels get used, any WAPs on those channels will transmit independent of what is happening on the other channels and thus causing deterioration in the WIFI's performance. Look at it this way, you have just selected your favourite Rock channel, but you can hear country music from another channel/station. It is now overlapping, and the performance of either has now deteriorated. This type of interference is called Adjacent Channel Interference (ACI).
+
+
+2.4GHz Co-Channel Interference
+
+Co-Channel Interference (CCI) is when two or more WAPs in the same area operate on the same channel. Essentially this turns both cells (cell = coverage area for WAP) into one giant cell. Any device with anything to transmit now must wait for the other devices associated with the same WAP and all the devices associated with the other WAP on the same channel. CCI is not as damaging as ACI, but performance is still affected. As the number of devices trying to access the wireless medium on the same channel increases, the longer those devices wait for their chance to transmit.
+
+
+2.4GHz WAP Channel Layout Plan
+
+Starting with Channel one, there are three non-overlapping channels, channels 1,6, and 11. To set up WAPs using the 2.4GHz band and not interfere with each other, we use a honeycomb design to layout our WAPs and set their channels.
+
+
+5GHz Channels
+
+The other common frequency used in wireless networks is the 5GHz band. Unlike the 2.4GHz, the 5GHz band is not limited to only three non-overlapping channels, it has over 20 which means it is less congested, and has significantly more available spectrum.  
+
+Even though that 5GHz has more available spectrum, a few things need to be taken into consideration besides channel selection. The most important being selecting the correct channel width to use. With 5GHz the standard 20MHz channels can be combined to have 40MHz, 80MHz and even 160MHz wide channels. This means that the wider the channel more data is able to be sent through. 
+
+To create these wide channels, multiple adjacent 20MHz channels are 'bonded' together. The centre frequency of these now 'bonded' channels is the new channel number. For example, channels 36 and 40, 20MHz each, are bonded together to make a 40MHz wide channel, the new channel number is now channel 38 
+
+So why don't we just set all of our WAPs to the widest channel available? Think about what we discussed, referring to Co-Channel Interference. The 5GHz band allows for Nine 20MHz channels in UNII-1 & UNII-3 and 16 20MHz channels in UNII-2. That makes a total of 25 non-overlapping 20MHz channels.
+
+Let's make our channels 80MHz wide. Referring to the table above, you can see that we have now gone from 25 non-overlapping channels down to six available non-overlapping channels. This is not a problem for WAPs at opposite ends of a facility that cannot hear each other. However, the problems start when WAPs are close together and can hear each other. These WAPs and any associated devices become part of the same cell, and this increases the contention and causes everything to slow down. All devices will have to wait their turn to access the medium.
+
+So, use the widest channels until you can't. Remember that even though you are using a wider channel, you can negate the benefits and even result in a lower data rate and throughput capacity of a lower width channel.
+
+
+Mixed Channel Widths
+
+Another consideration with 5GHz is mixed channel widths. You could be in an environment where there is a mixture of wide and narrow channels on your infrastructure, or neighbouring wireless networks around you use wide channels on 5GHz. A significant potential cause of degradation on your and their WIFIs performance is increased collisions and, therefore, retransmissions. 
+
+An attribute of a high-performing Wi-Fi network is channel reuse. To limit the amount of CCI introduced into an environment is deploying channels, and the best way to achieve this is by having as many channels to deploy as possible. Although an 80MHz channel can achieve higher data rates, clients can still reach acceptable speeds using 20MHz channels. It is about using every bit of available airtime to its total capacity.
+
+Remember, every situation is different. If you have one WAP at your small or home office and no neighbours/outside sources of contention, set your channels to 80MHz or even 160MHz.
+
+
+!!!!!!!!!!! use the widest channel until there is contention or degradation to your network !!!!!!!!!!!!!
+
+
+Final Considerations for 5GHz
+
+Dynamic Frequency Selection or DFS is a channel allocation scheme within the 5GHz WIFI band. This scheme prevents electromagnetic interference on frequencies that predate WIFI used by military radar, satellite communications and weather radar. Therefore, part of the WIFI 5GHz band is affected by radar activity.
+
+So out of the 25 channels available on the 5 GHz band in the US and EU, only nine single 20MHz wide channels (UNII-1 and UNII-3) won't be affected. 802.11h is the DFS compliance standard. If DFS activity is detected, WAPs close their channel transmission within 200ms on detection of DFS activity. All clients then have 10 seconds to move to a different channel. The affected WAP does not transmit for 60 seconds. After 60 seconds, the WAP will change to a channel not affected by DFS before starting to transmit again. The channel with DFS activity goes into 'non-occupancy' mode for 30 minutes. It's not just WAPs that respond to DFS channels but also WIFI client devices using DFS channels. 
+
+Passive Scanning Clients
+
+When WIFI client devices use passive scanning to discover an SSID, they must wait for around 105ms and listen for the SSID they want to connect to on that channel. When the SSID is not heard on that channel, it moves onto the next channel and waits again. The WIFI client device continues to move through the channels until it hears the SSID it is looking for; once the SSID is found, the association begins. 
+
+Active Scanning Clients
+
+Instead of waiting on a channel to hear an SSID, the client device sends a frame called a 'probe request'. When the WAP hears the 'probe request', it will respond with a 'probe response' that lists all available SSIDs on that WAP. 
+
+The main difference between active and passive scanning is that active scanning is approximately 5X faster. From sending the probe request to getting a probe response is roughly 20ms. 
+
+Even though active scanning is faster, there are two things to consider;
+
+Active scanning can only be used on non-DFS channels
+and Not all client devices support DFS channels
+Active scanning can only be carried out on UNII-1 and UNII-3 channels, whereas UNII-2 & UNII2c only support passive scanning. Client devices will in a roaming environment be affected if you are using DFS channels in 5GHz. Time-critical applications, such as voice calls over WIFI, may experience poor connectivity issues.  
+
+Another consideration is that some client devices don't support all DFS channels, and some devices do not support them at all. When you have DFS channels enabled in your environment and a WIFI client device that does not support DFS channels, that device will not be able to discover that 5GHz WIFI network in that area. This creates a black spot for those client devices that do not support DFS channels.
+
+
+Summary
+
+To summarise, we have two distinct types of wireless networks,
+
+Wireless Ad Hoc Network
+Where two or more devices connect using Bluetooth or WIFI to share files
+Wireless Infrastructure Network
+Where devices connect to a network and each other via WAP (Wireless Access Points)
+And the frequency bands that Wireless networks operate are,
+
+2.4GHz
+5GHz
+With 2.4GHz we are mainly concerned with making sure our WAPs are set to channels 1, 6 and 11 to avoid Adjacent Channel Interference and Co-Channel interference and never bond 2.4Ghz channel together.
+
+For 5GHz, there are 25 channels at 20MHz; these channels can go all the way up the 160MHz wide channels, but the wider the channel, the fewer available channels. Remember, when it comes to 5GHz, just because you have selected a wider channel does not mean that your throughput will be better; it could be worse than using a smaller channel width. Use the widest channel that you can until you can't.
+
+A firm understanding of these WLAN fundamentals will assist in setting up effective wireless networks and troubleshooting poor WLAN connectivity.

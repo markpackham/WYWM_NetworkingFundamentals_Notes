@@ -1,0 +1,16 @@
+Ethernet Standards
+
+What is Ethernet IEEE 802.3?
+
+The Institute for Electrical and Electronic Engineers (IEEE) developed an Ethernet standard known as IEEE Standard 802.3. This standard defines rules for configuring an Ethernet network and specifies how the elements in an Ethernet network interact with one another. By adhering to the IEEE standard, network equipment and network protocols can communicate efficiently.
+
+Ethernet Standards are defined, managed, and updated by the IEEE.
+
+The Ethernet Standards describe the properties, functions, and implementation of a specific medium. The media types covered in this lesson are Unshielded Twisted Pair (UTP) and Fibre Optic cabling. The diverse types of media provide different speeds of transmission and differing distances for data transmission capability.
+
+
+Wireless Standards
+
+Wi-Fi is the term used to describe wireless networks. Contrary to popular belief, Wi-Fi does not stand for Wireless Fidelity. For simplicity, Wi-Fi was chosen over 802.11 as a name to remember by the Wi-Fi Alliance.
+
+As with Ethernet, there are many diverse types of wireless standards, the most popular ones in use today are 802.11n, 802.11ac, and 802.11ax. If you have the time, take a look at your WAP, and check what standard you are using in your home.
