@@ -1,0 +1,9 @@
+Internet Protocol version 4
+
+Internet Protocol defines and enables internetworking at the internet layer of the TCP/IP model. Internet Protocol forms the internet. It uses a logical addressing system and performs routing, forwarding packets from a source host via routers to the intended destination host.
+
+IPv4 was the first version deployed for production on the Advanced Research Projects Agency Network (ARPANET). IPv4 is still used to route most Internet traffic today, despite the ongoing deployment of a successor protocol, IPv6.
+
+IPv4 is a connectionless protocol and operates on a best-effort delivery model. It does not guarantee delivery, nor does it assure proper sequencing or avoidance of duplicate delivery. The Transport layer addresses sequencing, duplication, and data integrity.
+
+IPv4 addresses are 32-bit addresses. They are written in dot-decimal notation, and consist of four octets of the address expressed individually in decimal numbers and separated by periods. Each dot-decimal value can range from 0 to 255.

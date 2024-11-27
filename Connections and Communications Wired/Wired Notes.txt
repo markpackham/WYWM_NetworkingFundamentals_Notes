@@ -61,6 +61,8 @@ UTP cables are terminated with standard connectors and jacks. These connectors a
 
 Straight through cables are commonly used for connecting PCs to switches or hubs.  These devices automatically cross over the cable internally.
 
+T568B wiring scheme select all of the pins involved with transmitting (Tx) data 1 & 2
+
 
 The Cross Over Cable
 
